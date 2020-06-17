@@ -32,14 +32,14 @@ function getHigherTransactionByType(typeTransaction) {
 }
 
 function getAverageTransactionValue() {
-  let soma = 0;
+  let soum = 0;
   let average = 0;
 
   for (let transaction of user.transactions) {
-    soma += transaction.value;
+    sum += transaction.value;
   }
 
-  average = soma / user.transactions.length;
+  average = sum / user.transactions.length;
   console.log(average);
 }
 
