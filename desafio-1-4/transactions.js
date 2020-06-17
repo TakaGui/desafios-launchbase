@@ -32,7 +32,7 @@ function getHigherTransactionByType(typeTransaction) {
 }
 
 function getAverageTransactionValue() {
-  let soum = 0;
+  let sum = 0;
   let average = 0;
 
   for (let transaction of user.transactions) {
