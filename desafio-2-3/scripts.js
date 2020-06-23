@@ -12,14 +12,9 @@ for (let card of cards) {
 document.querySelector('.close-modal').addEventListener('click', function() {
   modalOverlay.classList.remove('active');
   modalOverlay.querySelector('iframe').src = '';
-
-  if (modalOverlay.classList.contains('maximize')) {
-    modalOverlay.classList.remove('maximize');
-    modalOverlay.querySelector('.maximize-modal').textContent = 'maximize';
-  }
 });
 
-modalOverlay.querySelector('.maximize-modal').addEventListener('click', function() {
+modalOverlay.addEventListener('click', function() {
   if (modalOverlay.classList.contains('maximize')) {
     modalOverlay.classList.remove('maximize');
     modalOverlay.querySelector('.maximize-modal').textContent = 'maximize';
